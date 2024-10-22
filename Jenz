@@ -1,0 +1,73 @@
+### **Stages of DevOps**
+DevOps is a culture and set of practices that integrate software development (Dev) and IT operations (Ops), with the goal of shortening the software development life cycle (SDLC) and continuously delivering high-quality software. The **key stages of DevOps** are:
+
+1. **Planning**:
+   - Involves defining the software requirements, architecture, and scope of the project.
+   - Tools: Jira, Confluence, Trello.
+
+2. **Code**:
+   - Developers write the source code and use version control systems to manage the codebase.
+   - Tools: Git, GitHub, GitLab, Bitbucket.
+
+3. **Build**:
+   - The source code is compiled and packaged into an executable or deployable artifact (e.g., `.jar`, `.war`, or Docker image).
+   - Tools: Maven, Gradle.
+
+4. **Test**:
+   - Automated testing (unit, integration, and end-to-end tests) is performed to validate code quality.
+   - Tools: Selenium, JUnit, TestNG.
+
+5. **Integration**:
+   - Code is integrated into a shared repository, and Continuous Integration (CI) pipelines are triggered.
+   - **Jenkins** plays a major role in this stage for Continuous Integration.
+   - Tools: Jenkins, Travis CI, CircleCI.
+
+6. **Deploy**:
+   - Deploy the application to different environments (dev, staging, production).
+   - Jenkins, along with deployment tools like Kubernetes, Helm, or Ansible, helps automate this process.
+   - Tools: Jenkins, Docker, Kubernetes, AWS, Azure.
+
+7. **Operate**:
+   - Monitor and manage applications in production, ensuring they run reliably.
+   - Tools: Prometheus, Nagios, ELK Stack (Elasticsearch, Logstash, Kibana).
+
+8. **Monitor**:
+   - Track application performance and system health using monitoring tools. 
+   - Feedback from this stage helps in the planning of future improvements.
+   - Tools: Grafana, Prometheus, New Relic.
+
+### **Which Stage of DevOps Uses Jenkins?**
+- **Jenkins** is primarily used in the **Integration, Build, Test, and Deployment** stages.
+- In **Continuous Integration (CI)**, Jenkins automates building and testing the code. Once code changes are committed, Jenkins triggers automated build and test pipelines to ensure code quality.
+- In **Continuous Deployment (CD)**, Jenkins automates deploying the application to various environments, including staging and production.
+
+### **How Jenkins Uses Java's Path?**
+Jenkins is a Java-based tool, which means it requires the Java Development Kit (JDK) or Java Runtime Environment (JRE) to run. To ensure Jenkins works correctly, the Java path must be set up on the machine where Jenkins is running.
+
+1. **Java Installation**:
+   - Install Java on the machine (JDK or JRE).
+
+2. **Set Java Path**:
+   - You need to set the `JAVA_HOME` environment variable to point to the Java installation directory, and update the system `PATH` variable.
+
+   **On Linux/Mac**:
+   Add the following lines to your shell configuration file (e.g., `~/.bashrc`, `~/.bash_profile`, or `~/.zshrc`):
+   ```bash
+   export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+   export PATH=$JAVA_HOME/bin:$PATH
+   ```
+
+   **On Windows**:
+   1. Go to **System Properties > Advanced > Environment Variables**.
+   2. Under "System Variables," add or update the `JAVA_HOME` variable to point to your JDK path (e.g., `C:\Program Files\Java\jdk-11`).
+   3. Add `%JAVA_HOME%\bin` to the system `PATH`.
+
+3. **Jenkins Configuration**:
+   - Jenkins automatically picks up the Java installation from the system's `PATH` when it's installed.
+   - To verify if Jenkins is picking up the correct Java version, run:
+     ```bash
+     java -version
+     ```
+   - You can also configure the path Jenkins uses for Java in its configuration files if needed.
+
+By ensuring the Java path is set correctly, Jenkins can operate smoothly since it's built on Java.
