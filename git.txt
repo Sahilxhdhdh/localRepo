@@ -1,7 +1,7 @@
 git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"  : git config is the command used to configure settings, both at a global level 
 
-git clone: Copies an existing repository to your local machine.
+git clone <link>: Copies an existing repository to your local machine.
 
 
 git status: show files are staged for commit, what files are untracked, and what changes are not yet committed.
