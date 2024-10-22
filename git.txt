@@ -1,0 +1,54 @@
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"  : git config is the command used to configure settings, both at a global level 
+
+git clone: Copies an existing repository to your local machine.
+
+
+git status: show files are staged for commit, what files are untracked, and what changes are not yet committed.
+
+git add .: Adds changes to the staging area, preparing them to be committed.
+
+git commit -m "added text": Saves the changes to the repository.
+
+git push origin main: Sends your committed changes to a remote repository.
+
+git pull origin main: Retrieves the latest changes from a remote repository and integrates them into your local copy.
+
+git init : used to initialize new git repository
+
+git remote add origin https://github.com/user/my-repo.git: used to add a remote repository to your local Git repository
+
+git remote -v : verify remote
+
+git branch : to check branch
+Branches allow you to work on different versions or features of a project independently from the main codebase
+
+git branch -M <newname> : to rename branch
+
+git checkout <branchname>:switch to different branch
+
+git checkout -b <new branchname>:create new branch 
+
+git checkout -d <branchname>:delete new branch 
+
+git merge <branch> : used to combine changes from one branch into another
+
+git diff <branch> : used to show the differences between commits, branches, files, or your working directory and the staging area
+
+git log :  used to view the commit history of a repository
+
+undoing changes:
+
+case 1: staged changes
+		
+git reset <filename>
+git reset
+
+case 2: committed changes(for one change)
+git reset head~1
+
+case 3: committed changes(for many change)
+git reset <commithash>
+git reset --hard <commithash>
+
+
