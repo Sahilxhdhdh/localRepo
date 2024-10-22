@@ -1,0 +1,53 @@
+Q)Jenkins in devops
+Jenkins is a DevOps tool that automates the continuous integration/continuous delivery and deployment (CI/CD) process of software development
+
+
+Q)7 Cs of DevOps 
+
+Continuous Development
+Continuous Integration
+Continuous Testing
+Continuous Deployment/Continuous Delivery
+Continuous Monitoring
+Continuous Feedback
+Continuous Operations
+
+
+jenkins used in testing,integration , delivery.
+
+
+Q)install requirements
+
+Jenkins requires Java to run. You need to install either
+Depending on your CI/CD pipeline, you may need additional plugins for integration with tools like Gi
+
+
+Q)Pipelining
+
+jenkins uses ci/cd pipeline to streamline the work of devops teams.
+A pipeline defines the stages through which code changes pass from development to production, ensuring that every change is built, tested, and deployed reliably and efficiently.
+
+There are two types of Jenkins pipelines: scripted and declarative. 
+A scripted pipeline gives developers more control over the script so that new code can be injected into the pipeline at any time to update and change tasks. 
+A declarative pipeline uses predefined constructs for simpler coding, but that also makes it more rigid than scripted pipelines.
+
+Q)What is Continuous Integration (CI)?
+
+ Continuous Integration is a software development practice where developers regularly merge their code changes into a central repository, 
+followed by automated builds and tests.
+
+Q)What is a Jenkins agent?
+ A Jenkins agent is a machine or a process that performs the tasks defined in the pipeline, like building, testing, and deploying.
+
+Q)What is SCM in Jenkins?
+Answer: SCM (Source Control Management) in Jenkins refers to the system that manages and tracks code changes. 
+Jenkins integrates with SCM tools like Git, SVN, and Mercurial to trigger builds when changes are detected.
+
+Q)What are Jenkins plugins?
+
+Jenkins plugins are modules that extend the functionality of Jenkins. 
+Examples include Git Plugin, Maven Plugin, Slack Notification Plugin, and many others.
+
+Q)What are the stages of a Jenkins pipeline?
+
+Stages are logical divisions in a Jenkins pipeline representing different phases like build, test, deploy, etc.
