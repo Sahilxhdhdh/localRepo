@@ -1,0 +1,31 @@
+docker --version
+docker pull ubuntu
+docker images
+docker search ubuntu
+docker ps -a
+docker ps
+docker run -it ubuntu 
+docker run -d ubuntu 
+docker run --name sahil -it -d ubuntu 
+ls
+pwd
+apt update
+exit
+
+docker pull python
+docker run -it python
+print("Hello, Docker!")
+exit()
+
+docker rm <conatinername or id>
+
+docker rmi <imagename or id>
+
+docker run -it -v C:/Users/admin/OneDrive/Desktop/Docker-31:/usr/src/myapp -w /usr/src/myapp python python sum_fixed_numbers.py
+docker pull openjdk
+docker images
+docker run -it -v C:/Users/admin/OneDrive/Desktop/Docker-31:/usr/src/myapp -w /usr/src/myapp openjdk javac Main.java
+docker run -it -v C:/Users/admin/OneDrive/Desktop/Docker-31:/usr/src/myapp -w /usr/src/myapp openjdk java Main
+
+docker tag 99c35190e22d genji3110/ubuntu1:latest
+docker push genji3110/ubuntu1:latest
